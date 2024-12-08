@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Adds space between cards */
+  padding: 20px; /* Adds padding around the container */
+}
+
+.card {
+  flex: 1 1 calc(25% - 40px); /* Adjusts card width to 25% of the container with some space for gap */
+  margin-bottom: 20px;
+  max-width: 70%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.card img {
+  width: 100%; /* Makes the image take up the full width of the card */
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-10px); /* Moves the card up slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases the shadow on hover */
+}

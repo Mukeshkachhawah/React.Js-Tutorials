@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(43, 38, 38);
+  color: white;
+}
+.btn {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 2px 20px;
+  margin-left: 20px;
+}
